@@ -29,7 +29,7 @@ Python 3.10 example (Linux):
 ```bash
 python3.10 -m venv groundlight
 
-source gradio/bin/activate
+source groundlight/bin/activate
 ```
 
 3. Install Gradio and Groundlight with PIP
