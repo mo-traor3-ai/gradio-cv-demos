@@ -35,7 +35,13 @@ source gradio/bin/activate
 3. Install Gradio and Groundlight with PIP
 
 ```bash
-pip install gradio
+pip install gradio groundlight
+```
+
+OR install dependencies with requirements.txt (Recommended)
+
+```bash
+pip install -r requirements.txt
 ```
 
 4. Run the App
