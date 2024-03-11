@@ -18,7 +18,7 @@ Groundlight gives you the ability to answer questions about visual data (e.g ima
 
 4. *Use Case: Process Control* - "Are there two screws included in the packaging?
 
-## Using the Groundlight Gradio Demo
+## Launching the Groundlight Gradio Demo
 
 1. Navigate to your chosen working directory.
 
@@ -46,11 +46,27 @@ python3 app.py
 
 Click on the link that opens in your terminal, or copy and paste it in a browser window. The default link for the app is `http://127.0.0.1:7860` (running locally).
 
+### How to Use the Interface
+
+1. Enter your `Groundlight API Token` ([Create your Groundlight Account](https://app.groundlight.ai) --> [Navigate to API Tokens](https://app.groundlight.ai/reef/my-account/api-tokens) under your username --> Paste your API token in the Gradio app)
+2. Enter Image & Text-Based Inputs
+    * **`Detector Name`**: Create a name for your detector. Example: `ppe`
+    * **`Upload Image`:** Click on 'Upload Image' to choose an image file to submit to your Groundlight detector.
+    * **`Detector Query`** Type in your detector query (e.g the question that maps to your business value).
+3. **Adjust Parameters:**
+    * **`Wait Time`:** Slider to set how long to poll your detector (in seconds) for a confident answer. This is a client-side timeout.
+    * **`Patience Time`:** Slider to set how long to wait (in seconds) for a confident answer for this image query..
+    * **`Confidence Threshold`:** Slider to set the minimum confidence threshold for ML detection results.
+    * **`Human Review`:** Dropdown menu to select whether to send the image for human query (human-in-the-loop verification), regardless of ML result.
+4. **View Results:** Your detector will output the query result (e.g "YES", "NO") and the query confidence (%) for the submitted image.
+
 ![Sample Terminal Output](/assets/terminal_output.png)
 
-### Example Outputs
+* Sample terminal output when running the app
 
-**Query: "Is the person in the image wearing both their hard hat and safety vest properly?"**
+#### Example Usage
+
+*Detector Query: "Is the person in the image wearing both their hard hat and safety vest properly?"*
 
 ![Negative Example - Sample Query](/assets/app_example.png)
 
