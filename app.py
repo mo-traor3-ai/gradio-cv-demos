@@ -29,6 +29,7 @@ def detection_query(GROUNDLIGHT_TOKEN: str, det_name: str, pil_img: Image, det_q
 
     result_label = image_query.result.label
     result_confidence = f"{image_query.result.confidence:.2%}"
+    print(f"\n** The answer is {result_label} | Query confidence = {result_confidence}")
 
     return result_label, result_confidence
 

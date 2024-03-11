@@ -45,3 +45,13 @@ python3 app.py
 ```
 
 Click on the link that opens in your terminal, or copy and paste it in a browser window. The default link for the app is `http://127.0.0.1:7860` (running locally).
+
+![Sample Terminal Output](/assets/terminal_output.png)
+
+### Example Outputs
+
+**Query: "Is the person in the image wearing both their hard hat and safety vest properly?"**
+
+![Negative Example - Sample Query](/assets/app_example.png)
+
+![Positive Example - Sample Query](/assets/app_example1.png)
